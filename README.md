@@ -17,8 +17,7 @@ A command-line application that takes in information about employees on a softwa
   
   * [Questions](#Questions)
 ## Installation
-What are the steps required to install your project?
-Steps as needed
+
 ### Usage
 read licensing info and install
 ### License
@@ -26,7 +25,7 @@ ISC
 ### Contributing
 
 ### Tests
-Provide instructions for running tests:
+
 
 ## Questions
 * For questions, please reach out to me at marciasko@icloud.com
