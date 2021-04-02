@@ -1,12 +1,13 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Engineer</title>
-</head>
-<body>
-    
-</body>
-</html>
+<div class="card employee-card">
+    <div class="card-header">
+        <h3 class="card-title">{{ name }}</h3>
+        <h4 class="card-title"><i class="fas fa-glasses mr-2"></i>{{ role }}</h4>
+    </div>
+    <div class="card-body">
+        <ul class="list-group">
+            <li class="list-group-item">ID: {{ id }}</li>
+            <li class="list-group-item">Email: <a href="mailto:{{ email }}">{{ email }}</a></li>
+            <li class="list-group-item">GitHub: <a href="https://github.com/{{ github }}" target="_blank" rel="noopener noreferrer">{{ github }}</a></li>
+        </ul>
+    </div>
+</div>
