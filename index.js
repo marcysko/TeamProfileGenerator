@@ -3,6 +3,7 @@ const inquirer = require('inquirer');
 const ManagerInfo = require("./lib/Manager");
 const EngineerInfo = require("./lib/Engineer");
 const InternInfo = require("./lib/Intern");
+const render = require("./lib/htmlRenderer");
 
 
 const promptUser = () => {
