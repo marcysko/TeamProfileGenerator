@@ -1,15 +1,15 @@
 const fs = require('fs');
 const inquirer = require('inquirer');
-const ManagerInfo = require("./lib/Manager");
-const EngineerInfo = require("./lib/Engineer");
-const InternInfo = require("./lib/Intern");
+const Manager = require("./lib/Manager");
+const Engineer = require("./lib/Engineer");
+const Intern = require("./lib/Intern");
 const render = require("./lib/htmlRenderer");
 const path = require("path");
-const employ = []
+const emp = []
 const HTMLOUTPUT_DIR = path.resolve(__dirname, "htmloutput");
-const pathOutput = path.join(HTMLOUTPUT_DIR, "testoutput.html");
+const outputPath = path.join(HTMLOUTPUT_DIR, "testoutput.html");
 
-// THEN I am prompted to enter the team manager’s name, employee ID, email address, and office number
+// I am prompted to enter the team manager’s name, employee ID, email address, and office number
 function manager() {
     inquirer.prompt([
         {
@@ -19,17 +19,17 @@ function manager() {
         },
         {
             type: "input",
-            message: "Enter Employee ID.",
+            message: "Enter manager's employee ID.",
             name: "id"
         },
         {
             type: "input",
-            message: "Enter email address.",
+            message: "Enter manager's email address.",
             name: "email"
         },
         {
             type: "input",
-            message: "Enter office number.",
+            message: "Enter manager's office number.",
             name: "office"
         }
     ])
@@ -40,7 +40,7 @@ function manager() {
         buildTeam();
     });
 }
-// THEN I am presented with a menu with the option to add an engineer or an intern or to finish building my team
+// I am presented with a menu with the option to add an engineer or an intern or to finish building my team
 
 function buildTeam() {
     inquirer.prompt([
@@ -76,4 +76,83 @@ function buildTeam() {
         console.log(err);
     })
 }
-// Questions for manager about Engineer
+// I am prompted to enter the engineer’s name, ID, email, and GitHub username, and I am taken back to the menu
+
+function engineer() {
+    inquirer.prompt([
+        {
+            type: "input",
+            message: "Enter the engineer's name.",
+            name: "name"
+        },
+        {
+            type: "input",
+            message: "Enter the engineer's id number.",
+            name: "id"
+        },    
+
+        {
+            type: "input",
+            message: "Enter the engineer's email address.",
+            name: "email"
+
+        },
+        {
+            type: "input",
+            message: "Enter the engineer's GitHub username.",
+            name: "github"
+        }
+
+    ])
+
+        // engineer added to employee array
+        .then(function (response) {
+            emp.push(new Engineer(response.name, response.id, response.email, response.github))
+            buildTeam();
+        });
+}   
+
+        // I am prompted to enter the intern’s name, ID, email, and school, and I am taken back to the menu
+
+        function intern() {
+            inquirer.prompt([
+                {
+                    type: "input",
+                    message: "Enter the intern's name.",
+                    name: "name"
+                },
+                {
+                    type: "input",
+                    message: "Enter the intern's id number.",
+                    name: "id"
+                },   
+
+                {
+                    type: "input",
+                    message: "Enter the intern's email address.",
+                    name: "email"
+        
+                },
+                {
+                    type: "input",
+                    message: "Enter the intern's school.",
+                    name: "school"
+        
+                }
+            ])
+
+            // intern added to employee array
+
+            .then(function (response) {
+                emp.push(new Intern(response.name, response.id, response.email, response.school))
+                buildTeam();
+            });
+    }   
+    manager();
+
+
+
+
+        
+
+
