@@ -52,12 +52,14 @@ function buildTeam() {
         }
     ])
     // add team members
+    
     .then(function (response) {
-        if (response.team === "Engineer") {
+        console.log(response)
+        if (response.team[0] === "Engineer") {
             console.log("build engineer")
             // prompt the engineer question block
             engineer();
-        } else if (response.team === "Intern") {
+        } else if (response.team[0] === "Intern") {
             console.log("build intern")
             // prompt the intern question block
             intern();
