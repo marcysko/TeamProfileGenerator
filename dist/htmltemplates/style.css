@@ -13,8 +13,9 @@ body {
 .card-header {
     padding: .75rem 1.25rem;
     margin-bottom: 0;
-    background-color: blue;
+    background-color: rgb(38, 117, 236);
     border-bottom: 1px solid rgba(0,0,0,.125);
+    color: whitesmoke;
 }
 
 
