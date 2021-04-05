@@ -6,8 +6,8 @@ const Intern = require("./lib/Intern");
 const render = require("./lib/htmlRenderer");
 const path = require("path");
 const emp = []
-const HTMLOUTPUT_DIR = path.resolve(__dirname, "htmloutput");
-const outputPath = path.join(HTMLOUTPUT_DIR, "testoutput.html");
+const OUTPUT_DIR = path.resolve(__dirname, "output");
+const outputPath = path.join(OUTPUT_DIR, "testoutput.html");
 
 // I am prompted to enter the team manager’s name, employee ID, email address, and office number
 function manager() {
