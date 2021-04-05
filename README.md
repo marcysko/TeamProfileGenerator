@@ -6,6 +6,7 @@
 A command-line application that takes in information about employees on a software engineering team and generates an HTML webpage that displays summaries for each person.
 
 [![Screen-Shot-2021-04-05-at-2-20-16-PM.png](https://i.postimg.cc/3RrkgmG9/Screen-Shot-2021-04-05-at-2-20-16-PM.png)](https://postimg.cc/xk7jQktb)
+[![Screen-Shot-2021-04-04-at-9-43-52-PM.png](https://i.postimg.cc/gcsJPN50/Screen-Shot-2021-04-04-at-9-43-52-PM.png)](https://postimg.cc/py9xfYPN)
 
 
 ### License
