@@ -9,7 +9,7 @@ A command-line application that takes in information about employees on a softwa
 [![Screen-Shot-2021-04-04-at-9-43-52-PM.png](https://i.postimg.cc/gcsJPN50/Screen-Shot-2021-04-04-at-9-43-52-PM.png)](https://postimg.cc/py9xfYPN)
 
 ## VIDEO
-![Alt Text](https://media.giphy.com/media/OT5wLIYLXUd847mn8K/giphy.gif)
+![Watch Video](https://media.giphy.com/media/OT5wLIYLXUd847mn8K/giphy.gif)
 
 ### License
 ISC
